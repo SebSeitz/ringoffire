@@ -38,5 +38,10 @@
     img{
         width: 25vw;
         height: 10vh;
+
+        &:hover{
+            filter: brightness(1.75);
+            cursor: pointer;
+        }
     }
 }
