@@ -1,9 +1,10 @@
 .player{
     width: 300px;
+
     display: flex;
     align-items: center;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
     span{
         font-size: 32px;
         margin-left: 16px;
@@ -12,8 +13,8 @@
     background-color: orange;
 
     img{
-        height: 140px;
-        width: 160px;
+        height: 90px;
+        width: 90px;
         object-fit: cover;
         border-radius: 100%;
 
