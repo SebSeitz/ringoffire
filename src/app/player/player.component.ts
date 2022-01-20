@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 })
 export class PlayerComponent implements OnInit {
   @Input() name:string;
+  @Input() playerActive: boolean = false;
 
   constructor() { }
 
