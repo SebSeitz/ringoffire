@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @Component({
   selector: 'app-player',

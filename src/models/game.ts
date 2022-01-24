@@ -10,14 +10,25 @@ export class Game {
             this.stack.push('hearts_' + i);
             this.stack.push('clubs_' + i);
             this.stack.push('diamonds_' + i);
+        }
 
             shuffle(this.stack);
 
         }
 
+        public toJson(){
+            return{
+                players: this.players,
+                stack: this.stack,
+                playedCards: this.playedCards,
+                currentPlayer: this.currentPlayer,
+            };
+
+        }
+
     }
 
-}
+
 
 function shuffle(array:any) {
     let currentIndex = array.length,  randomIndex;
