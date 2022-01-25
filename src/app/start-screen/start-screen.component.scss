@@ -34,6 +34,7 @@
     padding: 30px;
     border-radius: 5%;
     border: 8px solid rgb(206, 206, 42 ,.8);
+    font-family:'Permanent Marker', cursive;;
 
     img{
         width: 25vw;
@@ -43,5 +44,20 @@
             filter: brightness(1.75);
             cursor: pointer;
         }
+    }
+}
+
+@media(max-width: 930px){
+    .title-box{
+        img{
+            width: 320px;
+        }
+    }
+}
+
+@media(max-width: 580px){
+    .title-box{
+        width: 290px;
+
     }
 }
