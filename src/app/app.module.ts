@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
     DialogAddPlayerComponent,
     GameInfoComponent,
     PlayerMobileComponent,
+    EditPlayerComponent,
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,
